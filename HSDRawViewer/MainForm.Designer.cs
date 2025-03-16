@@ -325,7 +325,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.TabText = "Hal DAT Browser";
-            this.Text = "HSDraw";
+            this.Text = "HSD KAR";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);

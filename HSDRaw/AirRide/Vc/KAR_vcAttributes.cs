@@ -99,8 +99,8 @@
         public float InitialTakeOffSpeed_2 { get => _s.GetFloat(0x140); set => _s.SetFloat(0x140, value); }
         public float VertLaunch_HoldDown { get => _s.GetFloat(0x144); set => _s.SetFloat(0x144, value); }
         public float VertLaunch_HoldUp { get => _s.GetFloat(0x148); set => _s.SetFloat(0x148, value); }
-        public float StraightAirAcceleration { get => _s.GetFloat(0x14c); set => _s.SetFloat(0x14c, value); }
-        public float AirTurnSharpness { get => _s.GetFloat(0x150); set => _s.SetFloat(0x150, value); }
+        public float TopSpeedAir { get => _s.GetFloat(0x14c); set => _s.SetFloat(0x14c, value); }
+        public float AirTurnUpdraft { get => _s.GetFloat(0x150); set => _s.SetFloat(0x150, value); }
         public float Unknown50 { get => _s.GetFloat(0x154); set => _s.SetFloat(0x154, value); }
         public float Unknown51 { get => _s.GetFloat(0x158); set => _s.SetFloat(0x158, value); }
         public float Unknown52 { get => _s.GetFloat(0x15c); set => _s.SetFloat(0x15c, value); }

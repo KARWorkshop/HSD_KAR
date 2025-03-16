@@ -52,7 +52,7 @@ namespace HSDRawViewer
 
             IsMdiContainer = true;
 
-            dockPanel.Theme = new VS2015LightTheme();
+            dockPanel.Theme = new VS2015DarkTheme();// VS2015LightTheme();
 
 #if DEBUG
             var vp = new GUI.Controls.DockableViewport();

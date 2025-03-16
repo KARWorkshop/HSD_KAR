@@ -8,9 +8,12 @@
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>dogg.ico</ApplicationIcon>
+    <ApplicationIcon>423px_kardelete_WAh_icon.ico</ApplicationIcon>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="423px_kardelete_WAh_icon.ico" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="GCILib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

@@ -122,7 +122,7 @@ namespace MachinePacker
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] arguments)
         {
             //lists the arguments
             string CLI_ARGUMENT_FLAG_DAT_FILEPATH = "-dat";
@@ -142,8 +142,6 @@ namespace MachinePacker
             string packFP = ""; //if has stuff we are packing, if not, we are exporting
 
             //parses the arguments
-            string[] arguments = Environment.GetCommandLineArgs();
-
             for (int i = 0; i < arguments.Length; i++)
             {
                 if (arguments[i] == CLI_ARGUMENT_FLAG_DAT_FILEPATH && i + 1 < arguments.Length)

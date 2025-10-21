@@ -10,7 +10,7 @@
 
         public float ModelScaling { get => _s.GetFloat(0x8); set => _s.SetFloat(0x8, value); }
 
-        public float BaseOffense { get => _s.GetFloat(0xc); set => _s.SetFloat(0xc, value); }
+        public float BaseWeight_Multi { get => _s.GetFloat(0xc); set => _s.SetFloat(0xc, value); }
 
         public float StartCameraDistance { get => _s.GetFloat(0x10); set => _s.SetFloat(0x10, value); }
 
@@ -50,7 +50,7 @@
         public float Ramming_DmgMulti { get => _s.GetFloat(0x7c); set => _s.SetFloat(0x7c, value); }
         public float Ramming_KnockbackVelocity { get => _s.GetFloat(0x80); set => _s.SetFloat(0x80, value); }
         public float Ramming_KnockbackDist { get => _s.GetFloat(0x84); set => _s.SetFloat(0x84, value); }
-        public float BaseOffenseDamage { get => _s.GetFloat(0x88); set => _s.SetFloat(0x88, value); }
+        public float BaseOffense { get => _s.GetFloat(0x88); set => _s.SetFloat(0x88, value); }
         public float BaseDefense { get => _s.GetFloat(0x8c); set => _s.SetFloat(0x8c, value); }
         public float TopSpeedGround { get => _s.GetFloat(0x90); set => _s.SetFloat(0x90, value); }
         public float SpeedMultiplierUpSlope { get => _s.GetFloat(0x94); set => _s.SetFloat(0x94, value); }
@@ -68,11 +68,11 @@
         public float SpeedGainSecondHalfThirdTankBoost { get => _s.GetFloat(0xc4); set => _s.SetFloat(0xc4, value); }
         public float SpeedGainThirdQuartThirdTankBoost { get => _s.GetFloat(0xc8); set => _s.SetFloat(0xc8, value); }
         public float SpeedGainFourthTankBoost { get => _s.GetFloat(0xcc); set => _s.SetFloat(0xcc, value); }
-        public float SpeedGainThirdQuartFourthTankBoost { get => _s.GetFloat(0xd0); set => _s.SetFloat(0xd0, value); }
-        public float SpeedGainFullTankBoost { get => _s.GetFloat(0xd4); set => _s.SetFloat(0xd4, value); }
+        public float SpeedGainFullTankBoost { get => _s.GetFloat(0xd0); set => _s.SetFloat(0xd0, value); }
+        public float SpeedGainDriftingBoost { get => _s.GetFloat(0xd4); set => _s.SetFloat(0xd4, value); }
         public float BaseBoost { get => _s.GetFloat(0xd8); set => _s.SetFloat(0xd8, value); }
         public float SpeedGainSlidingBoost { get => _s.GetFloat(0xdc); set => _s.SetFloat(0xdc, value); }
-        public float TurnHandling { get => _s.GetFloat(0xe0); set => _s.SetFloat(0xe0, value); }
+        public float OutwardTurnAngle { get => _s.GetFloat(0xe0); set => _s.SetFloat(0xe0, value); }
         public float Machine_TurnChargeDrift { get => _s.GetFloat(0xe4); set => _s.SetFloat(0xe4, value); }
         public float Machine_GroundTilt { get => _s.GetFloat(0xe8); set => _s.SetFloat(0xe8, value); }
         public float Machine_GroundTiltSpeed { get => _s.GetFloat(0xec); set => _s.SetFloat(0xec, value); }
@@ -101,14 +101,14 @@
         public float VertLaunch_HoldUp { get => _s.GetFloat(0x148); set => _s.SetFloat(0x148, value); }
         public float TopSpeedAir { get => _s.GetFloat(0x14c); set => _s.SetFloat(0x14c, value); }
         public float AirTurnUpdraft { get => _s.GetFloat(0x150); set => _s.SetFloat(0x150, value); }
-        public float Unknown50 { get => _s.GetFloat(0x154); set => _s.SetFloat(0x154, value); }
-        public float Unknown51 { get => _s.GetFloat(0x158); set => _s.SetFloat(0x158, value); }
+        public float AerialLean { get => _s.GetFloat(0x154); set => _s.SetFloat(0x154, value); }
+        public float Landing_OrientationCorrection { get => _s.GetFloat(0x158); set => _s.SetFloat(0x158, value); }
         public float Unknown52 { get => _s.GetFloat(0x15c); set => _s.SetFloat(0x15c, value); }
         public float FullChargeMidairSpeed { get => _s.GetFloat(0x160); set => _s.SetFloat(0x160, value); }
-        public float Unknown53 { get => _s.GetFloat(0x164); set => _s.SetFloat(0x164, value); }
-        public float Unknown54 { get => _s.GetFloat(0x168); set => _s.SetFloat(0x168, value); }
-        public float Unknown55 { get => _s.GetFloat(0x16c); set => _s.SetFloat(0x16c, value); }
-        public float Unknown56 { get => _s.GetFloat(0x170); set => _s.SetFloat(0x170, value); }
+        public float DiveCrash_Lenicency { get => _s.GetFloat(0x164); set => _s.SetFloat(0x164, value); }
+        public float WobbleIntensity_SemiDiveCrash { get => _s.GetFloat(0x168); set => _s.SetFloat(0x168, value); }
+        public float WobbleIntensity_DiveCrash { get => _s.GetFloat(0x16c); set => _s.SetFloat(0x16c, value); }
+        public float DiveCrash_CrashHeight { get => _s.GetFloat(0x170); set => _s.SetFloat(0x170, value); }
         public float GlidePointUpSpeed { get => _s.GetFloat(0x174); set => _s.SetFloat(0x174, value); }
         public float GlidePointUpAmount { get => _s.GetFloat(0x178); set => _s.SetFloat(0x178, value); }
         public float GlidePointDownSpeed { get => _s.GetFloat(0x17c); set => _s.SetFloat(0x17c, value); }
@@ -119,7 +119,7 @@
         public float MidairTurnSpeedStraight { get => _s.GetFloat(0x190); set => _s.SetFloat(0x190, value); }
         public float Unknown58 { get => _s.GetFloat(0x194); set => _s.SetFloat(0x194, value); }
         public float MidairSideSnapbackSpeed { get => _s.GetFloat(0x198); set => _s.SetFloat(0x198, value); }
-        public float Unknown59 { get => _s.GetFloat(0x19c); set => _s.SetFloat(0x19c, value); }
+        public float AerialTurnSpeed_Multi { get => _s.GetFloat(0x19c); set => _s.SetFloat(0x19c, value); }
         public float RailSpeed_Multi { get => _s.GetFloat(0x1a0); set => _s.SetFloat(0x1a0, value); }
         public float RailSpeed_UpSlope { get => _s.GetFloat(0x1a4); set => _s.SetFloat(0x1a4, value); }
         public float RailSpeed_DownSlope { get => _s.GetFloat(0x1a8); set => _s.SetFloat(0x1a8, value); }

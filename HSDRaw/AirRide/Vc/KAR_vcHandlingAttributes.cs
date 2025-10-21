@@ -11,10 +11,10 @@
         public float BaseHandlingHighSpeed { get => _s.GetFloat(0x10); set => _s.SetFloat(0x10, value); }
         public float Unknown2 { get => _s.GetFloat(0x14); set => _s.SetFloat(0x14, value); }
         public float Unknown3 { get => _s.GetFloat(0x18); set => _s.SetFloat(0x18, value); }
-        public float Unknown4 { get => _s.GetFloat(0x1c); set => _s.SetFloat(0x1c, value); }
+        public float BaseTurn { get => _s.GetFloat(0x1c); set => _s.SetFloat(0x1c, value); }
         public float Unknown5 { get => _s.GetFloat(0x20); set => _s.SetFloat(0x20, value); }
-        public float Unknown6 { get => _s.GetFloat(0x24); set => _s.SetFloat(0x24, value); }
-        public float Unknown7 { get => _s.GetFloat(0x28); set => _s.SetFloat(0x28, value); }
+        public float GroundedLoweringSpeed { get => _s.GetFloat(0x24); set => _s.SetFloat(0x24, value); }
+        public float GroundRaisingSpeed { get => _s.GetFloat(0x28); set => _s.SetFloat(0x28, value); }
         public float Unknown8 { get => _s.GetFloat(0x2c); set => _s.SetFloat(0x2c, value); }
         public float Unknown9 { get => _s.GetFloat(0x30); set => _s.SetFloat(0x30, value); }
         public float Unknown10 { get => _s.GetFloat(0x34); set => _s.SetFloat(0x34, value); }
@@ -32,7 +32,7 @@
         public float Unknown21 { get => _s.GetFloat(0x64); set => _s.SetFloat(0x64, value); }
         public float Unknown22 { get => _s.GetFloat(0x68); set => _s.SetFloat(0x68, value); }
         public float Unknown23 { get => _s.GetFloat(0x6c); set => _s.SetFloat(0x6c, value); }
-        public float Unknown24 { get => _s.GetFloat(0x70); set => _s.SetFloat(0x70, value); }
+        public float StarATurn_BikeLeanStrength { get => _s.GetFloat(0x70); set => _s.SetFloat(0x70, value); }
         public float Unknown25 { get => _s.GetFloat(0x74); set => _s.SetFloat(0x74, value); }
         public float Unknown26 { get => _s.GetFloat(0x78); set => _s.SetFloat(0x78, value); }
         public float Unknown27 { get => _s.GetFloat(0x7c); set => _s.SetFloat(0x7c, value); }
@@ -60,7 +60,7 @@
         public float Unknown42 { get => _s.GetFloat(0xd4); set => _s.SetFloat(0xd4, value); }
         public float Unknown43 { get => _s.GetFloat(0xd8); set => _s.SetFloat(0xd8, value); }
         public float Unknown44 { get => _s.GetFloat(0xdc); set => _s.SetFloat(0xdc, value); }
-        public float Unknown45 { get => _s.GetFloat(0xe0); set => _s.SetFloat(0xe0, value); }
+        public float JitterIntensity { get => _s.GetFloat(0xe0); set => _s.SetFloat(0xe0, value); }
         public float Unknown46 { get => _s.GetFloat(0xe4); set => _s.SetFloat(0xe4, value); }
         public float Unknown47 { get => _s.GetFloat(0xe8); set => _s.SetFloat(0xe8, value); }
         public float Unknown48 { get => _s.GetFloat(0xec); set => _s.SetFloat(0xec, value); }

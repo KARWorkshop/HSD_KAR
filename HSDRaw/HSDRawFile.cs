@@ -853,6 +853,7 @@ namespace HSDRaw
                 x => x.StartsWith("rdDataCommon") ?  new HSDAccessor() : null, // TODO:
                 x => x.StartsWith("rdData") ?  new KAR_RdData() : null,
                 x => x.StartsWith("rdExt") ?  new KEX_RdExt() : null,
+                x => x.StartsWith("rdKirbyColors") ?  new KEX_KirbyColors() : null,
                 x => x.StartsWith("kexData") ?  new kexData() : null,
                 x => x.Equals("gmIntroEasyTable") ?  new SBM_gmIntroEasyTable() : null,
                 x => x.StartsWith("tyDisplayModel") ?  new HSDArrayAccessor<SBM_tyDisplayModelEntry>() : null,
